@@ -78,7 +78,7 @@ function turnKoma(place){
 	let heights = Math.floor(place/8) + 1;
 	if(check[nss]===komaColor||check[nss]==="none"){
 	}else{
-		let counts = 0;
+	let counts = 0;
 		while(heights < 9){
 			if(check[nss]===hantaiColor){
 				changeKomas.push(nss);
