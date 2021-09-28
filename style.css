@@ -1,0 +1,45 @@
+.body{
+	padding: 0;
+	margin: 0;
+}
+.border{
+	background-color: green;
+}
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.ban{
+	height: 95px;
+	width: 95px;
+	max-height: 95px;
+	max-width: 95px;
+	background-color: lightgreen;
+	border: black solid 1px;
+	cursor: pointer;
+}
+.ban .komaBlack{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background-color: black;
+	border: black 1px;
+	position: relative;
+	top: 10px;
+	left: 9px;
+	box-shadow: 0 0 15px gray ;
+	transition: all 2s;
+}
+.ban .komaWhite{
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	background-color: white;
+	border: black 1px;
+	position: relative;
+	top: 10px;
+	left: 9px;
+	box-shadow: 0 0 15px gray ;
+	transition: all 2s;
+}
