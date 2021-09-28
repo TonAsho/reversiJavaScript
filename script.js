@@ -92,10 +92,10 @@ function turnKoma(place){
 					let adds = document.createElement('div');
 					document.getElementById(changeKomas[n]).append(adds);
 					if(komaColor === "black"){
-						check[changeKoma[n]]="black"
+						check[changeKomas[n]]="black"
 						adds.className="komaBlack";
 					}else if(komaColor ==="white"){
-						check[changeKoma[n]]="white";
+						check[changeKomas[n]]="white";
 						adds.className="komaWhite"
 					}
 				}
