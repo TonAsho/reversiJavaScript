@@ -78,7 +78,7 @@ function turnKoma(place){
 	let heights = Math.floor(place/8) + 1;
 	if(check[nss]===komaColor||check[nss]==="none"){
 	}else{
-	let counts = 0;
+		let counts = 0;
 		while(heights < 9){
 			if(check[nss]===hantaiColor){
 				changeKomas.push(nss);
@@ -107,13 +107,71 @@ function turnKoma(place){
 		}
 	}
 	//横の処理
-	//テスト後に作る
+	//ADD TO GITHUB IN TERMINAL AND FIGHT THE TEST!!!!!!!!!!
+	let changeKom = [];
+	let widthRight= Math.floor(Number(place)%8);
+	let n;
+	let placePuls;
+	let siki;
+	let i=0;
+	placePuls = Math.floor(place) + 1;
+	n=8
+	siki = `${widthRight < n}`;
+	
+	while (i<2) {
+		if(i===1){
+			placePuls = Math.floor(place) - 1;
+			n=0;
+			siki = `${widthRight > n}`;
+		}
+		if(check[placePuls]===komaColor||check[placePuls]==="none"){
+		}else{
+			let s = 0;
+			while(siki){
+				console.log(siki)
+				if(check[placePuls]===hantaiColor){
+					changeKom.push(placePuls);
+					s++;
+				}else if(check[placePuls]==="none"){
+					changeKom.length=0;
+					siki=false
+					console.log("lkjszd")
+					break;
+				}else if(check[placePuls]===komaColor && s !== 0){
+					for(let n = 0; n<changeKom.length; n++){
+						document.getElementById(changeKom[n]).innerHTML="";
+						let ad = document.createElement('div');
+						document.getElementById(changeKom[n]).append(ad);
+						if(komaColor === "black"){
+							check[changeKom[n]]="black"
+							ad.className="komaBlack";
+						}else if(komaColor ==="white"){
+							check[changeKom[n]]="white";
+							ad.className="komaWhite"
+						}
+					}
+					changeKom.length=0;
+					break;
+				}
+				if (i === 0){
+					placePuls++;
+					widthRight++;
+					siki = `${widthRight < n}`;
+					if (siki===false) {
+						console.logI('fasdasdfas')
+					} else {}
+				}else{
+					placePuls--;
+					widthRight--;
+					siki = `${widthRight > n}`;
+				}
+			}
+		}
+		i++;
+	}
+	//斜めの処理
+	
 }
-
-
-
-
-
 
 
 
