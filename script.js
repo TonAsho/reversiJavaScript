@@ -117,7 +117,6 @@ function turnKoma(place){
 	placePuls = Math.floor(place) + 1;
 	n=8
 	siki = `${widthRight < n}`;
-	
 	while (i<2) {
 		if(i===1){
 			placePuls = Math.floor(place) - 1;
@@ -158,8 +157,8 @@ function turnKoma(place){
 					widthRight++;
 					siki = `${widthRight < n}`;
 					if (siki===false) {
-						console.logI('fasdasdfas')
-					} else {}
+						console.log('fasdasdfas')
+					}
 				}else{
 					placePuls--;
 					widthRight--;
@@ -170,7 +169,6 @@ function turnKoma(place){
 		i++;
 	}
 	//斜めの処理
-	
 }
 
 
