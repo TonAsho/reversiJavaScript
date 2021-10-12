@@ -457,7 +457,7 @@ function nanameLeftDown(ids, koma, hantaiColor){
 		// prerare ID
 		const element = n;
 		for (let x = 0; x < checkArrayLeft.length; x++) {
-			if (element === checkArrayLeft[x]) {
+			if (element === checkArrayRight[x]) {
 				if (check[element]!==koma) {
 					return;
 				}
