@@ -82,7 +82,7 @@ let checkArrayRight = [];
 let checkArrayLeft = [];
 window.onload = function(){
 	for (var i = 0; i < 64; i++) {
-		check.push = "white"
+		check.push("white")
 	}
 	firstAgain();
 	for (let a = 8; a < 65; a+=8) {
