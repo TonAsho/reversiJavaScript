@@ -89,6 +89,7 @@ window.onload = function(){
 		}else{
 			check.push("none");
 		}
+		check[i] = "white"
 	}
 	firstAgain();
 	for (let a = 8; a < 65; a+=8) {
