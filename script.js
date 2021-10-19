@@ -82,13 +82,11 @@ let checkArrayRight = [];
 let checkArrayLeft = [];
 window.onload = function(){
 	for (var i = 0; i < 64; i++) {
-		if(i === 28 || i === 37){
-			check.push("black")
-		}else if(i === 36 || i === 29){
-			check.push("white")
-		}else{
-			check.push("none");
-		}
+		check.push("white")
+			
+		
+		
+		
 	}
 	firstAgain();
 	for (let a = 8; a < 65; a+=8) {
